@@ -53,7 +53,7 @@ public class Solution {
         
          int count=0;
      Node<Integer> temp=head;
-        while(count!=i && temp!=null)
+        while(count<i && temp!=null)
         {
             temp=temp.next;
             count++;
