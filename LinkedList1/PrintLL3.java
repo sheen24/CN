@@ -21,7 +21,7 @@ public class LinkedListUse{
   public static void print(Node<Integer> head){
 
       Node<Integer> temp = head;
-      while(head!= null){
+      while(temp!= null){
         System.out.print(temp.data+" ");
         temp=temp.next;
       }
