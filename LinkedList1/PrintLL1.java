@@ -30,17 +30,25 @@ public class LinkedListUse{
     }
 
   public static void print(Node<Integer> head){
-      System.out.println("Print"+head);
-      System.out.println(head.data);
-      System.out.println(head.next);
-      System.out.println(head.next.data);
-      System.out.println(head.next.next.data);
+
+      while(head!= null){
+        System.out.print(head.data+" ");
+        head=head.next;
+      }
+      Syestem.out.println();
+
+      //System.out.println("Print"+head);
+      //System.out.println(head.data);
+      //System.out.println(head.next);
+      //System.out.println(head.next.data);
+      //System.out.println(head.next.next.data);
 
 
   }
   public static void main(String[] args){
 
       Node<Integer> head = createLinkedList();
+      print(head);
       //Node<Integer> n1= new Node<>(10);
       //System.out.println(n1);
       //System.out.println(n1.data);
@@ -50,3 +58,5 @@ public class LinkedListUse{
 
   }
 }
+
+  
